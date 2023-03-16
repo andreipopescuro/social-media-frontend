@@ -1,8 +1,5 @@
-import React from "react";
 import {
   Box,
-  Button,
-  Flex,
   Icon,
   Skeleton,
   Stack,

@@ -1,6 +1,5 @@
 import React from "react";
-import { useAuth } from "../context/AuthContext";
-import { Button, Stack } from "@chakra-ui/react";
+import { Stack } from "@chakra-ui/react";
 import Nav from "../components/Nav";
 import Main from "../components/Main";
 const Home = () => {

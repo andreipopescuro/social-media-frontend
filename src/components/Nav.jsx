@@ -1,20 +1,5 @@
-import {
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuGroup,
-  MenuDivider,
-  Stack,
-  Avatar,
-  HStack,
-  Tooltip,
-  useMediaQuery,
-} from "@chakra-ui/react";
+import { Stack, Avatar, Tooltip, useMediaQuery } from "@chakra-ui/react";
 import React from "react";
-import { IconButton } from "@chakra-ui/react";
-import { BellIcon } from "@chakra-ui/icons";
-import { Box, Button, Flex, Input } from "@chakra-ui/react";
 import Search from "./Navbar/Search";
 import Notifications from "./Navbar/Notifications";
 import FriendRequests from "./Navbar/FriendRequests";
@@ -22,8 +7,6 @@ import FeedSelector from "./Navbar/FeedSelector";
 import { Link } from "react-router-dom";
 import SearchAndLeftPannel from "./SearchAndLeftPannel";
 import { useAuth } from "../context/AuthContext";
-import { useUserFriendRequests } from "../hooks/useQueryFunctions/user";
-import { useMutation, useQueryClient } from "@tanstack/react-query";
 const Nav = () => {
   const { user } = useAuth();
   const [isVerySmall] = useMediaQuery("(max-width: 456px)");

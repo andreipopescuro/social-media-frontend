@@ -9,12 +9,9 @@ import {
   ModalHeader,
   Box,
   ModalOverlay,
-  Radio,
-  RadioGroup,
   Stack,
   Text,
   Icon,
-  Divider,
   useDisclosure,
   Input,
 } from "@chakra-ui/react";
@@ -28,7 +25,6 @@ const AboutModal = ({ userAbout }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { user } = useAuth();
   const queryClient = useQueryClient();
-  const [defaultValues, setDefaultValues] = useState({});
 
   const updateAboutMutation = useMutation(
     (data) => {

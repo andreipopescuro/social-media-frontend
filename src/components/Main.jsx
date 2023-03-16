@@ -2,7 +2,7 @@ import React from "react";
 import LeftPannel from "./MainContent/LeftPannel";
 import MiddlePannel from "./MainContent/MiddlePannel";
 import RightPannel from "./MainContent/RightPannel";
-import { Box, Stack, useMediaQuery } from "@chakra-ui/react";
+import { Box, useMediaQuery } from "@chakra-ui/react";
 import SettingsModal from "./MainContent/SettingsModal";
 const Main = () => {
   const [isSmallerThanMedium] = useMediaQuery("(min-width: 1076px)");
