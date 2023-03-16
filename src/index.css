@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+.chakra-slide {
+  margin-inline-start: 0 !important;
+}
+
+.css-18u2a8i {
+  margin: 0 !important;
+}
+
+.css-1ja6k42 {
+  margin: 0 !important;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+#strange-box-with-margin {
+  margin: 0;
+}
+
+::-webkit-scrollbar-track {
+  /* background-color: rgb(18, 113, 86); */
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+  margin-block: 5px;
+  border-radius: 100vh;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    rgb(223, 203, 26),
+    rgb(18, 113, 86),
+    rgb(198, 177, 22)
+  );
+  cursor: pointer;
+  border-radius: 100vh;
+  border: 1px solid rgb(18, 113, 86);
+}
