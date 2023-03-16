@@ -7,6 +7,14 @@ export default defineConfig({
   build: {
     rollupOptions: {
       external: ["framer-motion"],
+      output: {
+        globals: {
+          "framer-motion": "framer-motion",
+        },
+      },
     },
+  },
+  esbuild: {
+    jsxInject: `import { css } from '@emotion/react';`,
   },
 });
